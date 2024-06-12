@@ -48,4 +48,3 @@ q11b["ratio"] = q11a.values / q11b.values
 q12a = covid_data.groupby([covid_data["location"]])[["hospital_beds_per_thousand"]].mean()
 q12b = covid_data.groupby([covid_data["location"]])[["gdp_per_capita"]].mean()
 q12c = q12a.join(q12b)
-q12c[q12c[("gdp_per_capita"] > 10000) & ]
